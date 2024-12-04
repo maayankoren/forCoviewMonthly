@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coview Medical System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2d89ef;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .actions button {
+            background-color: #2d89ef;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .actions button:hover {
+            background-color: #1c65c8;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2d89ef;
+            color: white;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            header, footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coview Medical System</h1>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <!-- Patient Details -->
+            <div class="card">
+                <h3>Patient Details</h3>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Age:</strong> 45</p>
+                <p><strong>Condition:</strong> Stable</p>
+                <p><strong>Room:</strong> 204</p>
+            </div>
+
+            <!-- Monitor Data -->
+            <div class="card">
+                <h3>Monitor Data</h3>
+                <p><strong>Heart Rate:</strong> 72 bpm</p>
+                <p><strong>Blood Pressure:</strong> 120/80 mmHg</p>
+                <p><strong>Oxygen Saturation:</strong> 98%</p>
+            </div>
+
+            <!-- Actions -->
+            <div class="card">
+                <h3>Actions</h3>
+                <div class="actions">
+                    <button>Send Alert</button>
+                    <button>Update Status</button>
+                    <button>View History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Coview Medical System. All rights reserved.
+    </footer>
+</body>
+</html>
